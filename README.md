@@ -20,7 +20,7 @@ Esta API RESTful foi desenvolvida para gerenciar de forma eficiente uma bibliote
 ## Tecnologias Utilizadas
 
 * **Framework: Express**
-* **Banco de dados: SQL**
+* **Banco de dados: PostgreSQL**
 * **Linguagem: JavaScript**
 
 
