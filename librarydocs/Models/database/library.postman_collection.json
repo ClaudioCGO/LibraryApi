@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "aac60f38-b21b-4766-9261-2060dbc7cb68",
+		"name": "library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39998698"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"gordo\",\r\n    \"address\": \"recife, PE\",\r\n    \"email\": \"teste1@gmail.com\",\r\n    \"phone_number\": \"81 999999908\",\r\n    \"password\": \"123\",\r\n    \"confirmPassword\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"email\": \"teste1@gmail.com\",  \r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "books",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"title\": \"livro06\",\r\n    \"author\": \"valdeckss\",\r\n    \"gender\": \"drama\",\r\n    \"year\": \"2024-11-26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/book",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/books",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/book/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"id\": 1,\r\n            \"title\": \"livro2\",\r\n            \"author\": \"valdecks\",\r\n            \"gender\": \"comedia\",\r\n            \"year\": \"2024-11-26\"\r\n            }\r\n            ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/book/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "books_management",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"type\": \"devolucao\",\r\n        \"management_date\": \"2024-11-28T03:00:00.000Z\",\r\n        \"return_date\": \"2024-11-29\",\r\n        \"is_returned\": true,\r\n        \"bookId\": 1,\r\n        \"userId\": 2,\r\n        \"lendingid\": 15,\r\n        \"devolution_date\": \"2024-10-11T00:00:00.000Z\"\r\n            \r\n            \r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/bookmanagement",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"bookmanagement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/booksmanagement",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"booksmanagement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n           \r\n            \"management_date\": \"2024-11-28T03:00:00.000Z\",\r\n            \"return_date\": null,\r\n            \"is_returned\": false,\r\n            \"type\": \"emprestimo\",\r\n            \"lendingid\": null,  \r\n            \"bookId\": 1,\r\n            \"userId\": 1\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/bookmanagement/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"bookmanagement",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/bookmanagement/11",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"bookmanagement",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookReport",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/booksmanagement/bookreport",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"booksmanagement",
+								"bookreport"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userReport",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/booksmanagement/usersreport",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"booksmanagement",
+								"usersreport"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
