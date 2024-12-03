@@ -33,29 +33,35 @@ Esta API RESTful foi desenvolvida para gerenciar de forma eficiente uma bibliote
    ```bash
    git clone [https://github.com/ClaudioCGO/LibraryApi.git]
 
-2. Configurando o Banco de Dados
+2. Clonando o Repositório
+      * Abra o terminal e navegue até o diretório onde deseja clonar o projeto.
+      * Execute:
+      ```Bash
+      cd <LibraryApi>
+
+3. Configurando o Banco de Dados
       * Abra o cliente do PostgreSQL.
       * Crie o banco de dados
       ```Bash
       CREATE DATABASE library;
 
-2.1 Crie o usuário com permissões:
-      
+4. Crie o usuário com permissões:
+      ```Bash
       CREATE USER postgres WITH PASSWORD '0000';
       
 
-3. **Instale as dependências:**
+5. **Instale as dependências:**
    ```Bash
    cd biblioteca-api
    npm install
 
-4. **Configure o banco de dados:**
+6. **Configure o banco de dados:**
    Crie um banco de dados com o nome especificado nas variáveis de ambiente (por exemplo, .env).
    Execute as migrations para criar as tabelas:
    ```Bash
    npx sequelize db:migrate
 
-5. **Inicie a aplicação:**
+7. **Inicie a aplicação:**
    ```Bash
    npm start
 
