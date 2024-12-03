@@ -31,7 +31,7 @@ Esta API RESTful foi desenvolvida para gerenciar de forma eficiente uma bibliote
 ## Instalação
 1. **Clone o repositório:**
    ```bash
-   git clone [URL inválido removido]
+   git clone [https://github.com/ClaudioCGO/LibraryApi.git]
 
 2. **Instale as dependências:**
    ```Bash
