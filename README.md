@@ -18,19 +18,35 @@ Esta API RESTful foi desenvolvida para gerenciar de forma eficiente uma bibliote
     * Controle de prazos e multas.
 
 ## Tecnologias Utilizadas
+* **Node.js:** Ambiente de execução JavaScript.
+* **Express.js:** Framework web para Node.js.
+* **PostgreSQL:** Banco de dados relacional.
+* **Sequelize:** ORM para Node.js e PostgreSQL.
 
-* **Framework: Express**
-* **Banco de dados: PostgreSQL**
-* **Linguagem: JavaScript**
+## Pré-requisitos
+* **Node.js e npm (ou yarn) instalados:** https://nodejs.org/
+* **Um banco de dados PostgreSQL configurado:** https://www.postgresql.org/
+* **Um gerenciador de banco de dados (opcional):** pgAdmin, Postico, etc.
 
+## Instalação
+1. **Clone o repositório:**
+   ```bash
+   git clone [URL inválido removido]
 
-## Como Executar
+2. **Instale as dependências:**
+   ```Bash
+   cd biblioteca-api
+   npm install
 
-1. **Clonar o repositório:**
+3. **Configure o banco de dados:**
+   Crie um banco de dados com o nome especificado nas variáveis de ambiente (por exemplo, .env).
+   Execute as migrations para criar as tabelas:
+   ```Bash
+   npx sequelize db:migrate
 
-
-
-
+4. **Inicie a aplicação:**
+   ```Bash
+   npm start
 
 ## Contribuindo
 
