@@ -27,3 +27,21 @@ Esta API RESTful foi desenvolvida para gerenciar de forma eficiente uma bibliote
 ## Como Executar
 
 1. **Clonar o repositório:**
+
+
+
+
+
+## Contribuindo
+
+**Agradecemos sua contribuição! Para contribuir com este projeto, siga estes passos:**
+
+1. **Fork o repositório:** Clique no botão "Fork" no GitHub.
+2. **Crie um novo branch:** git checkout -b nova-funcionalidade
+3. **Faça suas alterações e commit:** git commit -m "Descrição da sua alteração"
+4. **Envie um pull request:** Abra um pull request no GitHub, descrevendo as suas alterações.
+
+## Autores
+
+* [Cláudio Cordeiro] - [claudio.cordeirogo@gmail.com]
+* [Valdeck Gomes] - [valdeckgomes62@gmail.com]
