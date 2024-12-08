@@ -7,7 +7,7 @@ Esta API RESTful foi desenvolvida para gerenciar de forma eficiente uma bibliote
 ## Funcionalidades
 
 * **Gerenciamento de usuários:**
-    * Cadastro, atualização e exclusão de usuários.
+    * Cadastro e listagem de usuários.
     * Autenticação e autorização de usuários.
 * **Gerenciamento de livros:**
     * Cadastro, atualização e exclusão de livros.
