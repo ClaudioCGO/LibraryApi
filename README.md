@@ -39,29 +39,7 @@ Esta API RESTful foi desenvolvida para gerenciar de forma eficiente uma bibliote
       ```Bash
       cd <LibraryApi>
 
-3. Configurando o Banco de Dados
-      * Abra o cliente do PostgreSQL.
-      * Crie o banco de dados
-      ```Bash
-      CREATE DATABASE library;
-
-4. Crie o usuário com permissões:
-      ```Bash
-      CREATE USER postgres WITH PASSWORD '0000';
-      
-
-5. **Instale as dependências:**
-   ```Bash
-   cd biblioteca-api
-   npm install
-
-6. **Configure o banco de dados:**
-   Crie um banco de dados com o nome especificado nas variáveis de ambiente (por exemplo, .env).
-   Execute as migrations para criar as tabelas:
-   ```Bash
-   npx sequelize db:migrate
-
-7. **Inicie a aplicação:**
+3. **Inicie a aplicação:**
    ```Bash
    npm start
 
